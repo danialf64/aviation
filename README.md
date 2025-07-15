@@ -4,19 +4,16 @@ A simple model of global aviation.
 
 ## Dependencies
 
+This repository uses [uv](https://docs.astral.sh/uv/) for comprehensive project management.
+Dependency bounds are defined in [`pyproject.toml](pyproject.toml) and the locked environment is specified in [`uv.lock].
+
 The dependencies can be installed using the following code:
 
-A [virtual environment](https://docs.python.org/3/library/venv.html) can be created using the following command:
+To install the dependencies using a [virtual environment](https://docs.python.org/3/library/venv.html) the following command can be used:
 
-`python -m venv .venv`
-
-The environment can be activated using the following command on linux systems:
-
-`source .venv/bin/activate`
-
-MkDocs can be installed using:
-
-`pip install mkdocs`
+```
+uv sync
+```
 
 ## Developer Guide
 
