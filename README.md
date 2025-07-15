@@ -10,10 +10,10 @@ The following constants are required for the model and are defined below.
 | ---------------------------- | ------------------------------ | ------------- | --------------- | --------- |
 | Passengers per year          | `passengers_per_year`          | 5,000,000,000 | passengers/year | [^1]      |
 | Seats per aircraft           | `seats_per_aircraft`           | 160           | seats           | [^2]      |
-| Flights per aircraft per day | `flights_per_aircraft_per_day` | 3.6           | flights/day     | [^1] [^2] |
+| Flights per aircraft per day | `flights_per_aircraft_per_day` | 3.6           | flights/day     | [^1] [^3] |
 | Days per year                | `days_per_year`                | 365.25        | days/year       | -         |
 
-ATAG report a global fleet of 29,039 commercial aircraft in operation [^1]. OAG report that the average number of commerical flights per day in 2024 was 103,770 [^2]. From this it can be derived that there is an average of 3.6 flights per aircraft per day.
+ATAG report a global fleet of 29,039 commercial aircraft in operation [^1]. OAG report that the average number of commerical flights per day in 2024 was 103,770 [^3]. From this it can be derived that there is an average of 3.6 flights per aircraft per day.
 
 ## Model for Global Feet Size
 
@@ -35,6 +35,6 @@ $$
 
 ## References
 
-[^1]: Air Transport Action Group. 2025. “Facts & Figures.” ATAG. Accessed July 15, 2025. https://atag.org/facts‑figures.
-[^2]: OAG. 2024. “Why Is Average Flight Capacity Increasing at Its Fastest Rate Ever?” OAG Aviation Market Analysis (blog), March 28, 2024. Accessed July 15, 2025. https://www.oag.com/blog/average-flight-capacity-increasing-at-fastest-rate-ever.
-[^3]: OAG Aviation Worldwide Limited. “Airline Frequency and Capacity Statistics.” Updated July 2025. OAG Aviation Data. Accessed July 15, 2025. https://www.oag.com/airline-frequency-and-capacity-statistics
+[^1]: Air Transport Action Group. 2025. “Facts & Figures.” ATAG. Accessed July 15, 2025. [Link](https://atag.org/facts‑figures).
+[^2]: OAG. 2024. “Why Is Average Flight Capacity Increasing at Its Fastest Rate Ever?” OAG Aviation Market Analysis (blog), March 28, 2024. Accessed July 15, 2025. [Link](https://www.oag.com/blog/average-flight-capacity-increasing-at-fastest-rate-ever).
+[^3]: OAG Aviation Worldwide Limited. “Airline Frequency and Capacity Statistics.” Updated July 2025. OAG Aviation Data. Accessed July 15, 2025. [Link](https://www.oag.com/airline-frequency-and-capacity-statistics).
