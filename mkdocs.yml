@@ -1,5 +1,5 @@
 site_name: Aviation
 
 nav:
-  - "index.md"
+  - Home: "index.md"
   - Aviation Model: "aviation.md"
