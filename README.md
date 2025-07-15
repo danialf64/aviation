@@ -29,7 +29,7 @@ The required global fleet of aircraft can be calculated using the following equa
 
 $$
 \begin{equation}
-\text{required global feet} = \frac{\text{passengers per day}}{\text{seats per aircraft} \times \text{flights per aircraft per day}}
+\text{required global feet} = \frac{\text{passengers per day}}{\text{seats per aircraft } \times \text{ flights per aircraft per day}}
 \end{equation}
 $$
 
