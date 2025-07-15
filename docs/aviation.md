@@ -1,4 +1,4 @@
-# Aviation
+# Aviation Model
 
 This document describes a simple model of global aviation.
 
