@@ -21,7 +21,7 @@ The passengers per day can be defined using the following equation.
 
 $$
 \begin{equation}
-\text{passengers_per_day} = \frac{\text{passengers_per_year}}{\text{days_per_year}}
+\text{passengers per day} = \frac{\text{passengers per year}}{\text{days per year}}
 \end{equation}
 $$
 
@@ -29,7 +29,7 @@ The required global fleet of aircraft can be calculated using the following equa
 
 $$
 \begin{equation}
-\text{required_global_feet} = \frac{\text{passengers_per_day}}{\text{seats_per_aircraft} \times \text{flights_per_aircraft_per_day}}
+\text{required global feet} = \frac{\text{passengers per day}}{\text{seats per aircraft} \times \text{flights per aircraft per day}}
 \end{equation}
 $$
 
