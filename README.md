@@ -11,9 +11,9 @@ The following constants are required for the model and are defined below.
 | Passengers per year          | `passengers_per_year`          | 5,000,000,000 | passengers/year | [^1]      |
 | Seats per aircraft           | `seats_per_aircraft`           | 160           | seats           | [^2]      |
 | Flights per aircraft per day | `flights_per_aircraft_per_day` | 3.6           | flights/day     | [^1] [^3] |
-| Days per year                | `days_per_year`                | 365.25        | days/year       | -         |
+| Days per year                | `days_per_year`                | 366           | days/year       | -         |
 
-ATAG report a global fleet of 29,039 commercial aircraft in operation [^1]. OAG report that the average number of commerical flights per day in 2024 was 103,770 [^3]. From this it can be derived that there is an average of 3.6 flights per aircraft per day.
+ATAG report a global fleet of 29,039 commercial aircraft in operation [^1]. OAG report that the average number of commerical flights per day in 2024 was 103,770 [^3]. From this it can be derived that there is an average of 3.6 flights per aircraft per day. The days per year has been defined as 366 as data from 2024 was used which was a leap year.
 
 ## Model for Global Feet Size
 
