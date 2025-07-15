@@ -1,4 +1,4 @@
-# Welcome to "Aviation"
+# Welcome to Aviation
 
 A simple model of global aviation.
 
