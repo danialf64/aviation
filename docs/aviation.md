@@ -6,14 +6,14 @@ This document describes a simple model of global aviation.
 
 The following constants are required for the model and are defined below.
 
-| Constant                     | Symbol                         | Value           | Unit         | Ref       |
-| ---------------------------- | ------------------------------ | --------------- | ------------ | --------- |
-| Passengers per year          | `passengers_per_year`          | $5 \times 10^9$ | year^-1^     | [^1]      |
-| Seats per aircraft           | `seats_per_aircraft`           | 160             | .            | [^2]      |
-| Flights per aircraft per day | `flights_per_aircraft_per_day` | 3.6             | day^-1^      | [^1] [^3] |
-| Days per year                | `days_per_year`                | 366             | day year^-1^ | -         |
+| Constant                     | Symbol                         | Value           | Unit         | Ref                                         |
+| ---------------------------- | ------------------------------ | --------------- | ------------ | ------------------------------------------- |
+| Passengers per year          | `passengers_per_year`          | $5 \times 10^9$ | year^-1^     | ATAG[@atagFactsFigures]                     |
+| Seats per aircraft           | `seats_per_aircraft`           | 160             | .            | OAG[@oag2024flightcapacity]                 |
+| Flights per aircraft per day | `flights_per_aircraft_per_day` | 3.6             | day^-1^      | OAG[@atagFactsFigures] [@oag2025statistics] |
+| Days per year                | `days_per_year`                | 366             | day year^-1^ | -                                           |
 
-ATAG report a global fleet of 29,039 commercial aircraft in operation [^1]. OAG report that the average number of commerical flights per day in 2024 was 103,770 [^3]. From this it can be derived that there is an average of 3.6 flights per aircraft per day. The days per year has been defined as 366 as data from 2024 was used which was a leap year.
+ATAG report a global fleet of 29,039 commercial aircraft in operation [@atagFactsFigures]. OAG report that the average number of commerical flights per day in 2024 was 103,770 [@oag2025statistics]. From this it can be derived that there is an average of 3.6 flights per aircraft per day. The days per year has been defined as 366 as data from 2024 was used which was a leap year.
 
 ## Model for Global Fleet Size
 
@@ -34,9 +34,3 @@ $$
     \label{eq:required_global_fleet}
 \end{equation}
 $$
-
-## References
-
-[^1]: Air Transport Action Group. 2025. “Facts & Figures.” ATAG. Accessed July 15, 2025. [Link](https://atag.org/facts‑figures).
-[^2]: OAG. 2024. “Why Is Average Flight Capacity Increasing at Its Fastest Rate Ever?” OAG Aviation Market Analysis (blog), March 28, 2024. Accessed July 15, 2025. [Link](https://www.oag.com/blog/average-flight-capacity-increasing-at-fastest-rate-ever).
-[^3]: OAG Aviation Worldwide Limited. “Airline Frequency and Capacity Statistics.” Updated July 2025. OAG Aviation Data. Accessed July 15, 2025. [Link](https://www.oag.com/airline-frequency-and-capacity-statistics).
