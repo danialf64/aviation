@@ -6,11 +6,17 @@ nav:
   - Home: "index.md"
   - Aviation Model: "aviation.md"
 
+plugins:
+  - search
+  - bibtex:
+      bib_file: "https://api.zotero.org/groups/5782724/collections/G847TDER/items?format=bibtex&limit=100"
+
 markdown_extensions:
   - pymdownx.caret
   - pymdownx.tilde
   - pymdownx.arithmatex:
       generic: true
+  - footnotes
 
 extra_javascript:
   - javascripts/mathjax.js
