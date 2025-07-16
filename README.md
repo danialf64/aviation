@@ -2,6 +2,16 @@
 
 A simple model of global aviation.
 
+## Model/Analysis
+
+This repository contains a single analysis script. [`aviation.py`](aviation.py) which implements the simple model for global aviation.
+It outputs the required global fleet.
+To execute the script, run:
+
+```
+uv run python aviation.py
+```
+
 ## Dependencies
 
 This repository uses [uv](https://docs.astral.sh/uv/) for comprehensive project management.
