@@ -1,5 +1,6 @@
 site_name: Aviation
-
+theme:
+  name: material
 nav:
   - Home: "index.md"
   - Aviation Model: "aviation.md"
