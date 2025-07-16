@@ -1,4 +1,6 @@
-# Welcome to Aviation
+# Welcome to Danial's Aviation model
+
+![General Aviation](assets/general-aviation.jpg)
 
 A simple model of global aviation.
 
