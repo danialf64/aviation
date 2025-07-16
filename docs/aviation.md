@@ -17,19 +17,21 @@ ATAG report a global fleet of 29,039 commercial aircraft in operation [^1]. OAG 
 
 ## Model for Global Fleet Size
 
-The passengers per day can be defined using the following equation.
+The passengers per day can be defined using the equation $\eqref{eq:passengers_per_day}$.
 
 $$
 \begin{equation}
-\text{passengers per day} = \frac{\text{passengers per year}}{\text{days per year}}
+    \text{passengers per day} = \frac{\text{passengers per year}}{\text{days per year}}
+    \label{eq:passengers_per_day}
 \end{equation}
 $$
 
-The required global fleet of aircraft can be calculated using the following equation.
+The required global fleet of aircraft can be calculated using the equation $\eqref{eq:required_global_fleet}$.
 
 $$
 \begin{equation}
-\text{required global fleet} = \frac{\text{passengers per day}}{\text{seats per aircraft } \times \text{ flights per aircraft per day}}
+    \text{required global fleet} = \frac{\text{passengers per day}}{\text{seats per aircraft } \times \text{ flights per aircraft per day}}
+    \label{eq:required_global_fleet}
 \end{equation}
 $$
 
