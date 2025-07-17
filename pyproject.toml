@@ -7,13 +7,21 @@ requires-python = ">=3.12"
 dependencies = []
 
 [dependency-groups]
-docs = [
-    "mkdocs-bibtex>=4.4.0",
-    "mkdocs-material>=9.6.15",
-]
+dev = ["ruff>=0.12.3"]
+docs = ["mkdocs-bibtex>=4.4.0", "mkdocs-material>=9.6.15"]
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "N", "SIM", "T", "UP"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint.per-file-ignores]
+"analysis/passengers_per_day.py" = ["T201"]
+"analysis/required_global_fleet.py" = ["T201"]
 
 [tool.uv]
-default-groups = ["docs"]
+default-groups = ["dev", "docs"]
 
 [build-system]
 requires = ["uv_build>=0.7.21,<0.8.0"]
