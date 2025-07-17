@@ -15,6 +15,17 @@ docs = [
     "mkdocs-material>=9.6.15",
 ]
 
+[tool.ruff.lint]
+select = [
+    "B",
+    "E",
+    "F",
+    "I",
+    "N",
+    "SIM",
+    "UP",
+]
+
 [tool.uv]
 default-groups = ["dev", "docs"]
 
