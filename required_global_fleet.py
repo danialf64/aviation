@@ -15,4 +15,4 @@ required_global_fleet = aviation.required_global_fleet(
     flights_per_aircraft_per_day=flights_per_aircraft_per_day,
 )
 
-print(f"{required_global_fleet=}")
+print(f"{required_global_fleet=:_}")
