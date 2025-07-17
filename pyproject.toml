@@ -27,6 +27,9 @@ select = [
     "UP",
 ]
 
+[tool.ruff]
+line-length = 100
+
 [tool.ruff.lint.per-file-ignores]
 "analysis/passengers_per_day.py" = ["T201"]
 "analysis/required_global_fleet.py" = ["T201"]
