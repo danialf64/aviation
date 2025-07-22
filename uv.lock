@@ -16,6 +16,7 @@ dev = [
 docs = [
     { name = "mkdocs-bibtex" },
     { name = "mkdocs-material" },
+    { name = "mkdocs-prebuild" },
     { name = "mkdocstrings", extra = ["python"] },
 ]
 
@@ -30,6 +31,7 @@ dev = [
 docs = [
     { name = "mkdocs-bibtex", specifier = ">=4.4.0" },
     { name = "mkdocs-material", specifier = ">=9.6.15" },
+    { name = "mkdocs-prebuild", specifier = ">=0.5.0" },
     { name = "mkdocstrings", extras = ["python"], specifier = ">=0.29.1" },
 ]
 
@@ -378,6 +380,19 @@ wheels = [
 ]
 
 [[package]]
+name = "mkdocs-prebuild"
+version = "0.5.0"
+source = { registry = "https://gitlab.developers.cam.ac.uk/api/v4/projects/8115/packages/pypi/simple" }
+dependencies = [
+    { name = "mkdocs" },
+    { name = "types-colorama" },
+]
+sdist = { url = "https://gitlab.developers.cam.ac.uk/api/v4/projects/8115/packages/pypi/files/b612a2fbba5bbd59992491259ab5d7265cf1ab99434a07efd6df5f38da860ae5/mkdocs_prebuild-0.5.0.tar.gz", hash = "sha256:b612a2fbba5bbd59992491259ab5d7265cf1ab99434a07efd6df5f38da860ae5" }
+wheels = [
+    { url = "https://gitlab.developers.cam.ac.uk/api/v4/projects/8115/packages/pypi/files/9138986dccbbf0ba4ed64b8998d25062d97352f503264e44deb9001f419b8850/mkdocs_prebuild-0.5.0-py3-none-any.whl", hash = "sha256:9138986dccbbf0ba4ed64b8998d25062d97352f503264e44deb9001f419b8850" },
+]
+
+[[package]]
 name = "mkdocstrings"
 version = "0.29.1"
 source = { registry = "https://gitlab.developers.cam.ac.uk/api/v4/projects/8115/packages/pypi/simple" }
@@ -663,6 +678,15 @@ source = { registry = "https://gitlab.developers.cam.ac.uk/api/v4/projects/8115/
 sdist = { url = "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81", size = 34031, upload-time = "2024-12-04T17:35:28.174Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274", size = 11050, upload-time = "2024-12-04T17:35:26.475Z" },
+]
+
+[[package]]
+name = "types-colorama"
+version = "0.4.15.20240311"
+source = { registry = "https://gitlab.developers.cam.ac.uk/api/v4/projects/8115/packages/pypi/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/59/73/0fb0b9fe4964b45b2a06ed41b60c352752626db46aa0fb70a49a9e283a75/types-colorama-0.4.15.20240311.tar.gz", hash = "sha256:a28e7f98d17d2b14fb9565d32388e419f4108f557a7d939a66319969b2b99c7a", size = 5608, upload-time = "2024-03-11T02:15:51.557Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b7/83/6944b4fa01efb2e63ac62b791a8ddf0fee358f93be9f64b8f152648ad9d3/types_colorama-0.4.15.20240311-py3-none-any.whl", hash = "sha256:6391de60ddc0db3f147e31ecb230006a6823e81e380862ffca1e4695c13a0b8e", size = 5840, upload-time = "2024-03-11T02:15:50.43Z" },
 ]
 
 [[package]]
