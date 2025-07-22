@@ -19,17 +19,39 @@ docs = [
 mypy_path = "src"
 strict = true
 
-[tool.ruff.lint]
-select = ["B", "D", "E", "F", "I", "N", "SIM", "T", "UP"]
-
 [tool.ruff]
 line-length = 100
 target-version = "py313"
 
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "ANN1",
+    "COM812",
+    "COM819",
+    "D206",
+    "D300",
+    "E111",
+    "E114",
+    "E117",
+    "E501",
+    "ISC001",
+    "ISC002",
+    "Q000",
+    "Q001",
+    "Q002",
+    "Q003",
+    "W191",
+]
+
+[tool.ruff.lint.flake8-pytest-style]
+fixture-parentheses = false
+mark-parentheses = false
+parametrize-values-type = "tuple"
+
 [tool.ruff.lint.per-file-ignores]
-"analysis/passengers_per_day.py" = ["T201"]
-"analysis/required_global_fleet.py" = ["T201"]
-"tests/*" = ["D1"]
+"analysis/*" = ["INP001", "T201"]
+"tests/*" = ["D1", "INP001", "S101"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
