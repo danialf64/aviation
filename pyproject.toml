@@ -20,6 +20,7 @@ select = ["B", "D", "E", "F", "I", "N", "SIM", "T", "UP"]
 
 [tool.ruff]
 line-length = 100
+target-version = "py313"
 
 [tool.ruff.lint.per-file-ignores]
 "analysis/passengers_per_day.py" = ["T201"]
