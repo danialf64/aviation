@@ -1,3 +1,5 @@
+"""Analysis to determine the number of passengers per day globally."""
+
 import aviation
 
 passengers_per_year = 5_000_000_000.0
