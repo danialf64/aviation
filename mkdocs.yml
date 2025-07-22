@@ -7,9 +7,12 @@ nav:
   - Aviation Model: "aviation.md"
 
 plugins:
+  - mkdocstrings
   - search
   - bibtex:
       bib_file: "https://api.zotero.org/groups/5782724/collections/G847TDER/items?format=bibtex&limit=100"
+  - mkdocs-prebuild:
+      base_path: ["."]
 
 markdown_extensions:
   - pymdownx.caret

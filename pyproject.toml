@@ -8,21 +8,35 @@ dependencies = []
 
 [dependency-groups]
 dev = ["pre-commit>=4.2.0", "pytest>=8.4.1", "ruff>=0.12.3"]
-docs = ["mkdocs-bibtex>=4.4.0", "mkdocs-material>=9.6.15"]
+docs = [
+    "mkdocs-bibtex>=4.4.0",
+    "mkdocs-material>=9.6.15",
+    "mkdocs-prebuild>=0.5.0",
+    "mkdocstrings[python]>=0.29.1",
+]
 
 [tool.ruff.lint]
-select = ["B", "E", "F", "I", "N", "SIM", "T", "UP"]
+select = ["B", "D", "E", "F", "I", "N", "SIM", "T", "UP"]
 
 [tool.ruff]
 line-length = 100
+target-version = "py313"
 
 [tool.ruff.lint.per-file-ignores]
 "analysis/passengers_per_day.py" = ["T201"]
 "analysis/required_global_fleet.py" = ["T201"]
+"tests/*" = ["D1"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
 
 [tool.uv]
 default-groups = ["dev", "docs"]
 
+[[tool.uv.index]]
+name = "gitlab"
+url = "https://gitlab.developers.cam.ac.uk/api/v4/projects/8115/packages/pypi/simple"
+
 [build-system]
-requires = ["uv_build>=0.7.21,<0.8.0"]
+requires = ["uv_build>=0.8.0,<0.9.0"]
 build-backend = "uv_build"
