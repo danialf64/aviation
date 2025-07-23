@@ -13,16 +13,14 @@ from aviation.units import aircraft, journey, passenger
 @model.transform
 def passengers_per_day(
     passengers_per_year: typing.Annotated[Quantity, passenger / year],
-    days_per_year: typing.Annotated[Quantity, day / year],
 ) -> typing.Annotated[Quantity, passenger / day]:
     """The number of passengers per day globally.
 
     Args:
         passengers_per_year: The number of passengers flying per year globally.
-        days_per_year: The number of days in the modelled year.
 
     """
-    return passengers_per_year / days_per_year
+    return passengers_per_year.convert_to(passenger / day)
 
 
 @model.transform
