@@ -1,16 +1,16 @@
+import camia_engine as engine
 import pytest
 
 import aviation
-from aviation import _engine as engine
 
 
 @pytest.mark.parametrize(
     ("inputs", "output", "expected"),
     (
-        ({"passengers_per_year": 5_000_000_000}, "passengers_per_year", 5_000_000_000),
-        ({"required_global_fleet": 25_000}, "required_global_fleet", 25_000),
+        ({"passengers_per_year": 5_000_000_000.0}, "passengers_per_year", 5_000_000_000.0),
+        ({"required_global_fleet": 25_000.0}, "required_global_fleet", 25_000.0),
         (
-            {"days_per_year": 366.0, "passengers_per_year": 5_000_000_000},
+            {"days_per_year": 366.0, "passengers_per_year": 5_000_000_000.0},
             "passengers_per_day",
             13_661_202.18579235,
         ),
@@ -26,7 +26,7 @@ from aviation import _engine as engine
         (
             {
                 "days_per_year": 366.0,
-                "passengers_per_year": 5_000_000_000,
+                "passengers_per_year": 5_000_000_000.0,
                 "seats_per_aircraft": 160.0,
                 "flights_per_aircraft_per_day": 3.6,
             },
