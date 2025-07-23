@@ -2,10 +2,10 @@
 
 __all__ = ("passengers_per_day", "required_global_fleet")
 
-from aviation._model import transform
+import camia_model as model
 
 
-@transform
+@model.transform
 def passengers_per_day(passengers_per_year: float, days_per_year: float) -> float:
     """The number of passengers per day globally.
 
@@ -17,7 +17,7 @@ def passengers_per_day(passengers_per_year: float, days_per_year: float) -> floa
     return passengers_per_year / days_per_year
 
 
-@transform
+@model.transform
 def required_global_fleet(
     passengers_per_day: float, seats_per_aircraft: float, flights_per_aircraft_per_day: float
 ) -> float:

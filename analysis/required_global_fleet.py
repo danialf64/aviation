@@ -1,7 +1,8 @@
 """Analysis to determine the required size of the global fleet."""
 
+import camia_engine as engine
+
 import aviation
-from aviation import _engine as engine
 
 passengers_per_year = 5_000_000_000.0
 seats_per_aircraft = 160.0
@@ -18,6 +19,4 @@ output = "required_global_fleet"
 
 systems_model = engine.SystemsModel(aviation.transforms)
 required_global_fleet = systems_model.evaluate(inputs, output)
-print(f"{required_global_fleet=}")
-
 print(f"{required_global_fleet=:_}")
