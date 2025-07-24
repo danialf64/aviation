@@ -2,6 +2,22 @@
 
 This document describes a simple model of global aviation.
 
+```mermaid
+
+    flowchart LR
+        A[passengers_per_year]
+        A --> B[passengers_per_day]
+        B --> C[required_global_fleet]
+        D[seats_per_aircraft] --> C
+        E[flights_per_aircraft_per_day] --> C
+
+    style A fill:#4E6C41,stroke:#85B09A,stroke-width:1px
+    style B fill:#4E6C41,stroke:#85B09A,stroke-width:1px
+    style C fill:#4E6C41,stroke:#85B09A,stroke-width:1px
+    style D fill:#4E6C41,stroke:#85B09A,stroke-width:1px
+    style E fill:#4E6C41,stroke:#85B09A,stroke-width:1px
+```
+
 ## Constants
 
 The following constants are required for the model and are defined below.
