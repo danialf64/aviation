@@ -16,6 +16,7 @@ dev = [
     { name = "mypy" },
     { name = "pre-commit" },
     { name = "pytest" },
+    { name = "pytest-camia" },
     { name = "ruff" },
 ]
 docs = [
@@ -36,6 +37,7 @@ dev = [
     { name = "mypy", specifier = ">=1.17.0" },
     { name = "pre-commit", specifier = ">=4.2.0" },
     { name = "pytest", specifier = ">=8.4.1" },
+    { name = "pytest-camia", specifier = ">=0.3.3" },
     { name = "ruff", specifier = ">=0.12.3" },
 ]
 docs = [
@@ -703,6 +705,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/08/ba/45911d754e8eba3d5a841a5ce61a65a685ff1798421ac054f85aa8747dfb/pytest-8.4.1.tar.gz", hash = "sha256:7c67fd69174877359ed9371ec3af8a3d2b04741818c51e5e99cc1742251fa93c", size = 1517714, upload-time = "2025-06-18T05:48:06.109Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/29/16/c8a903f4c4dffe7a12843191437d7cd8e32751d5de349d45d3fe69544e87/pytest-8.4.1-py3-none-any.whl", hash = "sha256:539c70ba6fcead8e78eebbf1115e8b589e7565830d7d006a8723f19ac8a0afb7", size = 365474, upload-time = "2025-06-18T05:48:03.955Z" },
+]
+
+[[package]]
+name = "pytest-camia"
+version = "0.3.3"
+source = { registry = "https://gitlab.developers.cam.ac.uk/api/v4/projects/8115/packages/pypi/simple" }
+dependencies = [
+    { name = "camia-model" },
+    { name = "pytest" },
+]
+sdist = { url = "https://gitlab.developers.cam.ac.uk/api/v4/projects/8115/packages/pypi/files/8d9884482008d0aa1ebfc7de58de2d4c6ecb8403530eafcabded589cfa09c329/pytest_camia-0.3.3.tar.gz", hash = "sha256:8d9884482008d0aa1ebfc7de58de2d4c6ecb8403530eafcabded589cfa09c329" }
+wheels = [
+    { url = "https://gitlab.developers.cam.ac.uk/api/v4/projects/8115/packages/pypi/files/09a40b27a9271ad30bc02df5858402f09e2cdf4e68412d66456c7c9449fb5cc3/pytest_camia-0.3.3-py3-none-any.whl", hash = "sha256:09a40b27a9271ad30bc02df5858402f09e2cdf4e68412d66456c7c9449fb5cc3" },
 ]
 
 [[package]]
